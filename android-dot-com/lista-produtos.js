@@ -16,7 +16,7 @@ addToCartButtons.forEach(function(button) {
 function addToCart(productId) {
   // TODO: implementar a lógica para adicionar o produto ao carrinho de compras
   // Você pode usar localStorage, sessionStorage ou enviar uma requisição para o backend
-  
+  localStorage.setItem('cartItems',productId)
   // Exemplo usando localStorage:
   // Verifica se o carrinho de compras já existe no localStorage
   var cartItems = localStorage.getItem("cartItems");
