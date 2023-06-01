@@ -46,5 +46,5 @@ document.getElementById("payment-form").addEventListener("submit", function(even
   localStorage.removeItem("cartItems");
 
   // Redirecionar para uma página de confirmação
-  window.location.href = "index.html";
+  window.location.href = "https://mpiovesan04/sandbox/android-dot-com/index.html";
 });
