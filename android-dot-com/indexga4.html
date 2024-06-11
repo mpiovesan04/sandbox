@@ -129,6 +129,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'bookAuthor': 'Gabriel García Márquez'
 });">Detalhes do livro</a>
               <!-- <input type="button" onclick="funcao1()" value="Exibir Alert" /> -->
+               
               <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="dataLayer.push({'event': 'disparou'});"href="">Wear</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="dataLayer.push({'event': 'personalizado','propriedade_1': 'valor_1'});"href="">TV</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
@@ -140,7 +141,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <span class="android-mobile-title mdl-layout-title">
             <img class="android-logo-image" src="images/android-logo.png" id="andLogo">
           </span>
-
+          <!-- Botão para Teste -->
+  <button id="btn-submit">Submit</button>
+  <script>
+    document.getElementById('btn-submit').addEventListener('click', function() {
+      dataLayer.push({
+        'event': 'custom_event',
+        'event_category': 'Button',
+        'event_action': 'Click',
+        'event_label': 'Submit Button'
+      });
+    });
+  </script>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
