@@ -84,6 +84,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       z-index: 900;
     }
     </style>
+
+<!--// Evento de pageview customizado-->
+<script>
+dataLayer.push({
+  'event': 'custom_pageview',
+  'page_title': document.title,
+  'page_path': window.location.pathname,
+  'page_location': window.location.href
+});
+</script>
   </head>
   <body>
     <body onload=popup()>
@@ -146,10 +156,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script>
     document.getElementById('btn-submit').addEventListener('click', function() {
       dataLayer.push({
-        'event': 'custom_event',
+        'event': 'event',
         'event_category': 'Button',
         'event_action': 'Click',
-        'event_label': 'Submit Button'
+        'event_label': 'Submit Button',
+        'primeiroDisparo': 'aaaa'
+        'segundoDisparo': 'configCodigo'
+
       });
     });
   </script>
