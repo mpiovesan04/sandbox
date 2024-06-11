@@ -20,6 +20,7 @@
   <head>
     <!-- OUTRA GTAG GA4-->
     <!-- Google tag (gtag.js) -->
+<!--
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9P3KR76D9S"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -27,9 +28,8 @@
   gtag('js', new Date());
 
   gtag('config', 'G-9P3KR76D9S');
-</script>
+</script>-->
         <!--FIM-->
-
     
     <!-- Adicionar o GTag GA4 --!>
 <!-- Google tag (gtag.js) -->
@@ -150,7 +150,19 @@ dataLayer.push({
     'bookCategory': 'fiction',
     'bookTitle': 'Cien años de soledad',
     'bookAuthor': 'Gabriel García Márquez'
-});">Detalhes do livro</a>
+    <script>
+dataLayer.push({
+  'event': 'event',
+    'event_category': 'Book',
+    'event_action': 'Click',
+    'event_label': 'fiction',
+    'primeiroDisparo': 'abcde1',
+    'segundoDisparo': 'configCodigo2',
+  'page_title': document.title,
+  'page_path': window.location.pathname,
+  'page_location': window.location.href
+});
+});">Detalhes do livro</script></a>
               <!-- <input type="button" onclick="funcao1()" value="Exibir Alert" /> -->
                
               <a class="mdl-navigation__link mdl-typography--text-uppercase" onclick="dataLayer.push({'event': 'disparou'});"href="">Wear</a>
