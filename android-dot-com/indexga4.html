@@ -232,6 +232,21 @@ dataLayer.push({
           <div class="logo-font android-create-character">
             <a href=""><img src="images/andy.png"> create your android character</a>
             <!-- Botão para Teste -->
+  <button id="btn-submitLStorage">Submit-LStorage</button>
+            <script>
+    document.getElementById('btn-submitLStorage').addEventListener('click', function() {
+      dataLayer.push({
+        'event': 'event',
+        'event_category': 'Button',
+        'event_action': 'Click',
+        'event_label': 'Submit LocalStorage',
+        'primeiroDisparo': 'aaaa',
+        'segundoDisparo': 'configCodigo',
+        'setLStorage':'localStorage.setItem('setup','setouu-hein');        
+
+      });
+    });
+  </script>
   <button id="btn-submitGA4">Submit-GA4</button>
   <button id="btn-submit2">Submit</button>
   <script>
