@@ -261,6 +261,34 @@ dataLayer.push({
       });
     });
   </script>
+  <button id="btn-submitGet">GetLocalStorage2</button>
+            <script>
+    document.getElementById('btn-submitLStorage').addEventListener('click', function() {
+      dataLayer.push({
+        'name': 'event_get2',
+        'event_category': 'Button',
+        'event_action': 'Click',
+        'event_label': 'Submit GetLocalstorage',
+        'primeiroDisparo': 'aaaa',
+        'segundoDisparo': 'configCodigo',
+        'acionarLSt':'true'
+      });
+    });
+  </script>
+  <button id="btn-submitGet">GetLocalStorage3</button>
+            <script>
+    document.getElementById('btn-submitLStorage').addEventListener('click', function() {
+      dataLayer.push({
+        'event_name': 'event_get3',
+        'event_category': 'Button',
+        'event_action': 'Click',
+        'event_label': 'Submit GetLocalstorage',
+        'primeiroDisparo': 'aaaa',
+        'segundoDisparo': 'configCodigo',
+        'acionarLSt':'true'
+      });
+    });
+  </script>
   <button id="btn-submitGA4">Submit-GA4</button>
   <button id="btn-submit2">Submit</button>
   <script>
