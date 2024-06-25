@@ -278,7 +278,25 @@ dataLayer.push({
   </script>
           </div>
           <a href="https://www.w3schools.com">
-<img border="0" alt="W3Schools" src="logo_w3s.gif" width="100" height="100">
+<img border="0" alt="W3Schools" src="logo_w3s.gif" width="100" height="100" window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+   'transactionId': "My Test ID",
+   'transactionAffiliation': 'My Test Affiliation',
+   'transactionTotal': '3',
+   'transactionShipping': 'My test shipping',
+   'transactionProducts': [{
+       'name': "Test Name",
+       'sku': 'Ticket',
+       'category': "Sample Category",
+       'price': "3",
+       'quantity': "1"
+
+   }],
+    'event' : 'datalayerReady',
+    'eventCallback': function() {
+      console.log("transaction event was successful");
+    }
+});>
 </a>
           <a href="#screens">
             <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
